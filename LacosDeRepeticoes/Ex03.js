@@ -1,13 +1,14 @@
-//Verificar senha com tentativa até acertar(Use o While)
+// Verificar senha com tentativa até acertar(Use o While)
 
-let numeroCorreto = 1234;
 
 var prompt = require('prompt-sync')();
 
-let numero = Number(prompt("Olá, digite seu número: "));
+let senha = "1234";
+let tentativa = prompt("Digite a senha: ");
 
-while(numero !== numeroCorreto){
-    numero = Number(prompt("Digite a senha: "));
+while(tentativa !== senha){
+    console.log("Senha incorreta. Tente novamente.")
+    tentativa = prompt("Digite a senha: ")
 }
 
-console.log("Sua senha está correta");
+console.log("Acesso liberado!")

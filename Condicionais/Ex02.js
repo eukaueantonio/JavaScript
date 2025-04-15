@@ -1,13 +1,11 @@
-//Verificar se o usuário pode tirar carteira de motorista
-
 var prompt = require('prompt-sync')();
 
-let idade = Number(prompt("Olá, digite sua idade: "));
+let idade = prompt("Olá, digite a sua idade: ");
 
-if(idade => 18) {
-    console.log("Você poderá tirar a carteira");
-}else if(idade < 18){
-    console.log("Você não poderá tirar a carteira");
-}else{
-    console.log("Essa informação não é válida");
+if(idade >= 18){
+    console.log("Você pode tirar a carteira.")
+} else if(idade < 18){
+    console.log("Você não tem idade para tirar a carteira!")
+} else {
+    console.log("Essa informação não é válida!")
 }

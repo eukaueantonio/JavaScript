@@ -1,8 +1,8 @@
-//Contar de 1 a 10(Use o While)
+// Contar de 1 a 10(Use o While)
 
-let numero = 0;
+let contador = 1;
 
-while(numero !== 10){
-    numero++;
-    console.log(numero);
+while (contador <= 10) {
+  console.log(contador);
+  contador++;
 }

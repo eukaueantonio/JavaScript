@@ -1,11 +1,11 @@
-//Verificar se um aluno foi aprovado
+// Verificar se um aluno foi aprovado
 
 var prompt = require('prompt-sync')();
 
-let numero = Number(prompt("Olá, digite sua média: "));
+let nota = prompt("Digite a nota: ");
 
-if (numero >= 5) {
-    console.log("Você foi aprovado");
-}else if(numero < 5){
-    console.log("Você foi reprovado");
+if(nota >= 6){
+    console.log("Esse aluno foi aprovado.")
+} else {
+    console.log("Esse aluno foi reprovado.")
 }

@@ -1,15 +1,17 @@
-//Menu simples até o usuário sair(Use o do...While)
-let prompt = require('prompt-sync')();
-let num = 0;
+// Menu simples até o usuário sair(Use o do...While)
 
-do {
-    console.log("|******************|");
-    console.log("| 1 - Jogar        |");
-    console.log("| 2 - Comer        |");
-    console.log("| 3 - Sair         |");
-    console.log("|                  |");
-    console.log("|******************|");
+var prompt = require('prompt-sync')();
 
- num = Number(prompt("Digite um numero :"))
-  
-} while (num !== 3);
+let numero = 0;
+
+do {   
+    console.log("+================+")    
+    console.log("|                |")    
+    console.log("| 1) Musica      |")    
+    console.log("| 2) Jogo        |")    
+    console.log("| 3) Sair        |")    
+    console.log("|                |")    
+    console.log("+================+")    
+    num = Number(prompt(""))
+
+} while (numero !== 0);

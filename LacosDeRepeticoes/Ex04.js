@@ -1,10 +1,10 @@
-//Contar de 1 a 5 com do...while
+// Contar de 1 a 5 com do...while
 
-let numero = 1;
+let contador = 1;
 
 do {
-    console.log(numero)
-    numero++;
-} while (num <= 5){
+  console.log(contador);
 
-}
+  contador++;
+} while (contador <= 5)
+

@@ -1,9 +1,12 @@
-//Solicitar idade até uma válida (&gt;= 0) (Use o do...While)
-let prompt = require(`prompt-sync`)();
-let idade;
+// Solicitar idade até uma válida (Use o do...While)
+
+var prompt = require('prompt-sync')();
+
+let idade = 0;
 
 do {
-  idade = prompt("Digite sua idade (maior ou igual a 0):");
-} while (idade < 0 || idade === "");
+    idade = Number(prompt("Quantos anos você tem?: "))
 
-console.log("Idade válida: " + idade);
+} while (idade < 1)
+
+console.log("Está idade é valida! :)")
